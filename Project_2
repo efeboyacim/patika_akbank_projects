@@ -1,0 +1,9 @@
+​
+def reverse_list(elements):
+    listA = []
+    for item in elements:
+        if isinstance(item, list):
+            listA.extend(reverse_list(item)) 
+        else:
+            listA.append(item)
+    return listA
