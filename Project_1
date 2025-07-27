@@ -1,0 +1,6 @@
+def flatten(elements):
+    for i in range(len(elements)):
+        if isinstance(elements[i], list):
+            elements[i] = elements[i][::-1]
+    elements = elements[::-1] 
+    print(elements)
